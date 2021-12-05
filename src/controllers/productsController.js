@@ -54,9 +54,9 @@ const controller = {
 		} */
 
 		let newProduct = {
-			...req.body,
 			id: lastId + 1,
-			image: req.file ? req.file.filename: "default-image.png"
+			...req.body,
+			image: req.file ? req.file.filename: "default-img.jpg"
 		}
 
 
